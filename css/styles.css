@@ -42,7 +42,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 175, 180, 43; /* ****************************************************** */
+  --bs-primary-rgb: 158, 157, 36; /* ****************************************************** */
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -10968,5 +10968,21 @@ section.resume-section .resume-section-content {
     padding-right: 3rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+}
+
+/*================================================================================================= */
+
+.responsive-image {
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure proper spacing around the image */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+@media (max-width: 768px) {
+  .responsive-image {
+      max-width: 90%; /* Set maximum width for smaller screens */
+      margin-right: 5%; /* Add a margin to the right side */
   }
 }
